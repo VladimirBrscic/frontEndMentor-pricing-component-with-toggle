@@ -1,0 +1,71 @@
+fieldset {
+  border: none;
+  margin-bottom: 4.75rem;
+}
+fieldset:hover {
+  opacity: 0.8;
+}
+legend {
+  opacity: 0;
+  position: absolute;
+  font-size: 1px;
+}
+label {
+  display: inline-block;
+  line-height: 2;
+  position: relative;
+  z-index: 2;
+  color: $lightGrayishBlue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input {
+  opacity: 0;
+  position: absolute;
+}
+label:first-of-type {
+  padding-right: 5rem;
+}
+label:last-child {
+  margin-left: -4rem;
+  padding-left: 5rem;
+}
+label:first-of-type:before,
+label:first-of-type:after {
+  border: 1px solid #aaa;
+  content: "";
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  vertical-align: middle;
+}
+label:first-of-type:before {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  transform: translateX(0em);
+  transition: transform 0.2s ease-in-out;
+  height: 1.6em;
+  width: 1.6em;
+  z-index: 2;
+}
+label:first-of-type:after {
+  background: $linearGradient;
+  border-radius: 1rem;
+  margin: -0.25rem 1.55rem;
+  transition: background 0.2s ease-in-out;
+  height: 2rem;
+  width: 3.625rem;
+  cursor: pointer;
+}
+
+input:first-of-type:checked ~ label:first-of-type:before {
+  transform: translateX(-1.7em);
+}
+input:last-of-type:checked ~ label:last-of-type {
+  z-index: 1;
+}
+

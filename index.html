@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./scss/main.css">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  
+</head>
+<body>
+  <main>
+    <h1 class="heading"> Our Pricing</h1>
+    
+    <fieldset>
+      <legend>Our Pricing</legend>
+      <input type="radio" id="annually" name="toggle" value="annually">
+      <label for="annually">Annually</label>
+      <input type="radio" id="monthly" name="toggle" value="monthly" checked>
+      <label for="monthly">Monthly</label>
+    </fieldset>
+    
+  
+    <div class="container">
+      <section class="card">
+        <h2>Basic</h2>
+        <h3 class="b-border"><span>$</span><span class="price"></span></h3>
+        <ul>
+          <li class="b-border">500 GB Storage</li>
+          <li class="b-border">2 Users Allowed</li>
+          <li class="b-border">Send up to 3 GB</li>
+        </ul>
+        <div class="learn-more">
+          <a class="btn" href="#">Learn More</a>
+        </div>
+      </section>
+
+      <section class="card middle white-color">
+        <h2>Professional</h2>
+        <h3 ><span>$</span> </span><span class="price"></span></h3>
+        <ul>
+          <li class="b-border-white">1 TB Storage</li>
+          <li class="b-border-white">5 Users Allowed</li>
+          <li class="b-border-white">Send up to 10 GB</li>
+        </ul>
+        <div class="learn-more">
+          <a class="btn btn-white" href="#">Learn More</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Master</h2>
+        <h3 class="b-border"><span>$</span><span class="price"></span></h3>
+        <ul>
+          <li class="b-border">2 TB Storage</li>
+          <li class="b-border">10 Users Allowed</li>
+          <li class="b-border">Send up to 20 GB</li>
+        </ul>
+        <div class="learn-more">
+          <a class="btn" href="#">Learn More</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">VladBrs</a>.
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>
